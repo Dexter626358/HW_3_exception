@@ -18,31 +18,30 @@ public class CSVWriter {
 
         try {
             fileWriter = new FileWriter(fileName);
-
             fileWriter.append(FILE_HEADER.toString());
             fileWriter.append(NEW_LINE_SEPARATOR);
 
             for (User user : users) {
-                fileWriter.append(DELIMITER1);
-                fileWriter.append(user.getSurname());
-                fileWriter.append(DELIMITER2);
-                fileWriter.append(DELIMITER1);
-                fileWriter.append(user.getName());
-                fileWriter.append(DELIMITER2);
-                fileWriter.append(DELIMITER1);
-                fileWriter.append(user.getPatronymic());
-                fileWriter.append(DELIMITER2);
-                fileWriter.append(DELIMITER1);
-                fileWriter.append(user.getDate_of_birthday());
-                fileWriter.append(DELIMITER2);
-                fileWriter.append(" ");
-                fileWriter.append(DELIMITER1);
-                fileWriter.append(user.getTelephone());
-                fileWriter.append(DELIMITER2);
-                fileWriter.append(DELIMITER1);
-                fileWriter.append(user.getGender());
-                fileWriter.append(DELIMITER2);
-                fileWriter.append(NEW_LINE_SEPARATOR);
+                    fileWriter.append(DELIMITER1);
+                    fileWriter.append(user.getSurname());
+                    fileWriter.append(DELIMITER2);
+                    fileWriter.append(DELIMITER1);
+                    fileWriter.append(user.getName());
+                    fileWriter.append(DELIMITER2);
+                    fileWriter.append(DELIMITER1);
+                    fileWriter.append(user.getPatronymic());
+                    fileWriter.append(DELIMITER2);
+                    fileWriter.append(DELIMITER1);
+                    fileWriter.append(user.getDate_of_birthday());
+                    fileWriter.append(DELIMITER2);
+                    fileWriter.append(" ");
+                    fileWriter.append(DELIMITER1);
+                    fileWriter.append(Long.toString(user.getTelephone()));
+                    fileWriter.append(DELIMITER2);
+                    fileWriter.append(DELIMITER1);
+                    fileWriter.append(Character.toString(user.getGender()));
+                    fileWriter.append(DELIMITER2);
+                    fileWriter.append(NEW_LINE_SEPARATOR);
             }
 
             System.out.println("Users.csv файл создан успешно!");

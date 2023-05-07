@@ -7,10 +7,9 @@ public class UserInput {
         String data = reader.readUserData();
         System.out.println(data);
         Parser parser = new Parser();
-
+        User user;
         try {
-            String[] userData = parser.parseData(data);
-            User user = new User(userData[0], userData[1], userData[2], userData[3], userData[4], userData[5].charAt(0));
+           user = parser.parseData(data);
             return user;
         }
         catch (MySizeException e){

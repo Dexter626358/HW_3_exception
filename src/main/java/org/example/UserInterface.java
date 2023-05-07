@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Scanner;
 
 public class UserInterface {
+    /*
+    Метод запрашивает данные для ввода и отправляет их для записи в файл
+     */
     public void menu() {
         String inputUserData = "1. Ввести данные пользователя.";
         String exit = "2. Сохранение данных и выход из программы.";

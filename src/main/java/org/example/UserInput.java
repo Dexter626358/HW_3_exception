@@ -2,6 +2,10 @@ package org.example;
 
 public class UserInput {
 
+    /**
+     * Метод выбрасывает исклчение в результате введения некорректных данных по количеству или содержанию
+     * @return возвращает объект типа user
+     */
     public User askData(){
         ReadData reader = new ReadData();
         String data = reader.readUserData();

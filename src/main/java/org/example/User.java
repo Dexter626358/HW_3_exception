@@ -1,5 +1,8 @@
 package org.example;
 
+/**
+ * Класс описывающий данные юзера
+ */
 public class User {
     private String surname;
     private String name;

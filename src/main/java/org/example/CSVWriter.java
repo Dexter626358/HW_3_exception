@@ -11,6 +11,11 @@ public class CSVWriter {
     private static final String NEW_LINE_SEPARATOR = "\n";
     private static final String FILE_HEADER = "<surName><name><patronymic><birthdate> <phone><gender>";
 
+    /**
+     * Метод записи данных в файл
+     * @param users - список состоящий из объектов типа user
+     * Результат - файл txt с введенными данными пользователя
+     */
     public static void writeCSV(List<User> users) {
 
         String fileName = "Users.csv";
